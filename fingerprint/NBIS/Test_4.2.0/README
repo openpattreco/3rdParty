@@ -1,0 +1,84 @@
+#*******************************************************************************
+#
+# License: 
+# This software and/or related materials was developed at the National Institute
+# of Standards and Technology (NIST) by employees of the Federal Government
+# in the course of their official duties. Pursuant to title 17 Section 105
+# of the United States Code, this software is not subject to copyright
+# protection and is in the public domain. 
+#
+# This software and/or related materials have been determined to be not subject
+# to the EAR (see Part 734.3 of the EAR for exact details) because it is
+# a publicly available technology and software, and is freely distributed
+# to any interested party with no licensing requirements.  Therefore, it is 
+# permissible to distribute this software as a free download from the internet.
+#
+# Disclaimer: 
+# This software and/or related materials was developed to promote biometric
+# standards and biometric technology testing for the Federal Government
+# in accordance with the USA PATRIOT Act and the Enhanced Border Security
+# and Visa Entry Reform Act. Specific hardware and software products identified
+# in this software were used in order to perform the software development.
+# In no case does such identification imply recommendation or endorsement
+# by the National Institute of Standards and Technology, nor does it imply that
+# the products and equipment identified are necessarily the best available
+# for the purpose.
+#
+# This software and/or related materials are provided "AS-IS" without warranty
+# of any kind including NO WARRANTY OF PERFORMANCE, MERCHANTABILITY,
+# NO WARRANTY OF NON-INFRINGEMENT OF ANY 3RD PARTY INTELLECTUAL PROPERTY
+# or FITNESS FOR A PARTICULAR PURPOSE or for any purpose whatsoever, for the
+# licensed product, however used. In no event shall NIST be liable for any
+# damages and/or costs, including but not limited to incidental or consequential
+# damages of any kind, including economic damage or injury to property and lost
+# profits, regardless of whether NIST shall be advised, have reason to know,
+# or in fact shall know of the possibility.
+#
+# By using this software, you agree to bear all risk relating to quality,
+# use and performance of the software and/or related materials.  You agree
+# to hold the Government harmless from any claim arising from your use
+# of the software.
+#
+#*******************************************************************************
+
+This Test directory is organized hierarchically as illustrated in Figure 1 in 
+the /NBIS/Main/doc/refs/nbis.pdf.  The utilites are organized by packages 
+within the Test directory, one subdirectory for each package.  Within each 
+package, there are two directories.  The data directory contains sample input 
+files for the utilities in the package.  The execs directory contains one 
+subdirectory for each utility in the package.  Within each utility subdirectory
+under execs, there is a simple bash shell script (with extension "sh") and example 
+output files produced by the script. There is also a "master_test.sh which will 
+execute all the NBIS utility. (Note: Running "master_test.sh" may take several
+hours.)  
+
+In order to execute the bash shell scripts under Test directory, the
+following environment variables are required:
+
+TARGET_INSTALLATION_BIN_DIR=<target installation directory>/bin
+TARGET_INSTALLATION_RUNTIME_DIR=<target installation directory>/NBIS/Main/nbis
+NBIS_TEST_DIR=<test directory>/NBIS/Test
+
+The <target installation directory> is the specific directory path where you 
+installed the NBIS utilities directory and the runtime nibs data directory.  
+The <test directory> is the specific directory path where you installed the 
+test directory.
+
+On Windows platforms, find.exe is required to run master_test.sh.  To install:
+
+Step 1:
+	Complete the steps to install MinGW and MSYS per the Windows installation
+	file included with the latest release of the NBIS source distribution.
+
+Step 2:
+	Open an MSYS window and type: mingw-get install msys-findutils
+	This installs find, oldfind, and xargs.exe into <MinGW install dir>\msys\1.0\bin
+	where <MinGW install dir> is the specific directory path where
+	you installed MinGW.
+
+Step 3:
+	Using any file archiver app, open <MinGW install dir>\var\cache\mingw-get\packages\
+	findutils-4.4.2-2-msys-1.0.13-bin.tar.lzma\findutils-4.4.2-2-msys-1.0.13-bin.tar\bin\
+	and extract all into <MSYS install dir>\bin\
+	where <MSYS install dir> is the specific directory path where
+	you installed msys.

@@ -1,0 +1,5 @@
+DESCRIPTION: Covariance, made by meancov from ../../data/oas/fv1.oas, ../../data/oas/fv2.oas, ../../data/oas/fv3.oas, ../../data/oas/fv4.oas, ../../data/oas/fv5.oas, ../../data/oas/fv6.oas, ../../data/oas/fv7.oas, ../../data/oas/fv8.oas, ../../data/oas/fv9.oas
+TYPE: covariance
+ASCII OR BINARY: binary
+ORDER: 1680
+NO. OF VECTORS USED: 24300

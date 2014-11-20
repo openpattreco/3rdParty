@@ -1,0 +1,24 @@
+Optosf output file.  Parameters are: n_feats_use 64, osf_init 0.100000, osf_initstep 0.200000, osf_stepthr 0.010000, fvs_file ../lintran/fv1-9pnn_nist.kls, classes_file ../../data/oas/fv1-9.cls, n_fvs_use_as_protos_set 24300, n_fvs_use_as_tuning_set 5400
+osf: 0.100000; activ. error: 0.226013; classif. error: 0.200185
+osf: 0.300000; activ. error: 0.127282; classif. error: 0.138519
+osf: 0.500000; activ. error: 0.102527; classif. error: 0.117037
+osf: 0.700000; activ. error: 0.090736; classif. error: 0.106852
+osf: 0.900000; activ. error: 0.084622; classif. error: 0.099259
+osf: 1.100000; activ. error: 0.081664; classif. error: 0.097037
+osf: 1.300000; activ. error: 0.080607; classif. error: 0.098704
+osf: 1.500000; activ. error: 0.080717; classif. error: 0.099815
+osf: 1.400000; activ. error: 0.080549; classif. error: 0.099259
+osf: 1.300000; activ. error: 0.080607; classif. error: 0.098704
+osf: 1.350000; activ. error: 0.080547; classif. error: 0.099259
+osf: 1.400000; activ. error: 0.080549; classif. error: 0.099259
+osf: 1.375000; activ. error: 0.080541; classif. error: 0.099074
+osf: 1.350000; activ. error: 0.080547; classif. error: 0.099259
+osf: 1.362500; activ. error: 0.080542; classif. error: 0.099074
+osf: 1.375000; activ. error: 0.080541; classif. error: 0.099074
+osf: 1.387500; activ. error: 0.080543; classif. error: 0.098889
+osf: 1.381250; activ. error: 0.080541; classif. error: 0.098889
+osf: 1.375000; activ. error: 0.080541; classif. error: 0.099074
+osf: 1.368750; activ. error: 0.080540; classif. error: 0.099259
+osf: 1.362500; activ. error: 0.080542; classif. error: 0.099074
+Optimization finished; producing:
+  osf: 1.368750; activ. error: 0.080540; classif. error: 0.099259

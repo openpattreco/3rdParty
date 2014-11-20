@@ -1,0 +1,518 @@
+read K-L feature vectors, classes, and eigenvectors
+optimize irw (initial value for all regional weights)
+irw 0.100000, acerror 0.333796
+irw 1.100000, acerror 0.279197
+irw 2.100000, acerror 0.995926
+irw 1.600000, acerror 0.957740
+irw 1.100000, acerror 0.279197
+irw 0.600000, acerror 0.150657
+irw 0.100000, acerror 0.333797
+irw 0.350000, acerror 0.124496
+irw 0.600000, acerror 0.150657
+irw 0.475000, acerror 0.138701
+irw 0.350000, acerror 0.124496
+irw 0.225000, acerror 0.139082
+irw 0.287500, acerror 0.123337
+irw 0.350000, acerror 0.124496
+irw 0.318750, acerror 0.122694
+irw 0.287500, acerror 0.123337
+irw 0.303125, acerror 0.122619
+irw 0.318750, acerror 0.122694
+irw 0.310937, acerror 0.122570
+irw 0.303125, acerror 0.122619
+acerror_bspt 0.122570
+ibspt 0
+compute error at stepped-to points
+i = 0; acerrors_stepped[i] = 0.122571
+i = 1; acerrors_stepped[i] = 0.122571
+i = 2; acerrors_stepped[i] = 0.122572
+i = 3; acerrors_stepped[i] = 0.122572
+i = 4; acerrors_stepped[i] = 0.122572
+i = 5; acerrors_stepped[i] = 0.122572
+i = 6; acerrors_stepped[i] = 0.122572
+i = 7; acerrors_stepped[i] = 0.122572
+i = 8; acerrors_stepped[i] = 0.122572
+i = 9; acerrors_stepped[i] = 0.122572
+i = 10; acerrors_stepped[i] = 0.122572
+i = 11; acerrors_stepped[i] = 0.122571
+i = 12; acerrors_stepped[i] = 0.122571
+i = 13; acerrors_stepped[i] = 0.122571
+i = 14; acerrors_stepped[i] = 0.122571
+i = 15; acerrors_stepped[i] = 0.122571
+i = 16; acerrors_stepped[i] = 0.122572
+i = 17; acerrors_stepped[i] = 0.122572
+i = 18; acerrors_stepped[i] = 0.122572
+i = 19; acerrors_stepped[i] = 0.122571
+i = 20; acerrors_stepped[i] = 0.122571
+i = 21; acerrors_stepped[i] = 0.122571
+i = 22; acerrors_stepped[i] = 0.122571
+i = 23; acerrors_stepped[i] = 0.122571
+i = 24; acerrors_stepped[i] = 0.122572
+i = 25; acerrors_stepped[i] = 0.122572
+i = 26; acerrors_stepped[i] = 0.122572
+i = 27; acerrors_stepped[i] = 0.122571
+i = 28; acerrors_stepped[i] = 0.122571
+i = 29; acerrors_stepped[i] = 0.122571
+i = 30; acerrors_stepped[i] = 0.122571
+i = 31; acerrors_stepped[i] = 0.122572
+i = 32; acerrors_stepped[i] = 0.122572
+i = 33; acerrors_stepped[i] = 0.122571
+i = 34; acerrors_stepped[i] = 0.122571
+i = 35; acerrors_stepped[i] = 0.122571
+i = 36; acerrors_stepped[i] = 0.122570
+i = 37; acerrors_stepped[i] = 0.122570
+i = 38; acerrors_stepped[i] = 0.122571
+i = 39; acerrors_stepped[i] = 0.122571
+i = 40; acerrors_stepped[i] = 0.122572
+i = 41; acerrors_stepped[i] = 0.122572
+i = 42; acerrors_stepped[i] = 0.122571
+i = 43; acerrors_stepped[i] = 0.122571
+i = 44; acerrors_stepped[i] = 0.122571
+i = 45; acerrors_stepped[i] = 0.122571
+i = 46; acerrors_stepped[i] = 0.122571
+i = 47; acerrors_stepped[i] = 0.122572
+i = 48; acerrors_stepped[i] = 0.122571
+i = 49; acerrors_stepped[i] = 0.122571
+i = 50; acerrors_stepped[i] = 0.122571
+i = 51; acerrors_stepped[i] = 0.122570
+i = 52; acerrors_stepped[i] = 0.122570
+i = 53; acerrors_stepped[i] = 0.122571
+i = 54; acerrors_stepped[i] = 0.122571
+i = 55; acerrors_stepped[i] = 0.122571
+i = 56; acerrors_stepped[i] = 0.122571
+i = 57; acerrors_stepped[i] = 0.122571
+i = 58; acerrors_stepped[i] = 0.122571
+i = 59; acerrors_stepped[i] = 0.122571
+i = 60; acerrors_stepped[i] = 0.122571
+i = 61; acerrors_stepped[i] = 0.122571
+i = 62; acerrors_stepped[i] = 0.122571
+i = 63; acerrors_stepped[i] = 0.122571
+i = 64; acerrors_stepped[i] = 0.122571
+i = 65; acerrors_stepped[i] = 0.122570
+i = 66; acerrors_stepped[i] = 0.122570
+i = 67; acerrors_stepped[i] = 0.122570
+i = 68; acerrors_stepped[i] = 0.122571
+i = 69; acerrors_stepped[i] = 0.122571
+i = 70; acerrors_stepped[i] = 0.122571
+i = 71; acerrors_stepped[i] = 0.122571
+i = 72; acerrors_stepped[i] = 0.122571
+i = 73; acerrors_stepped[i] = 0.122571
+i = 74; acerrors_stepped[i] = 0.122572
+i = 75; acerrors_stepped[i] = 0.122571
+i = 76; acerrors_stepped[i] = 0.122571
+i = 77; acerrors_stepped[i] = 0.122571
+i = 78; acerrors_stepped[i] = 0.122570
+i = 79; acerrors_stepped[i] = 0.122570
+i = 80; acerrors_stepped[i] = 0.122569
+i = 81; acerrors_stepped[i] = 0.122568
+i = 82; acerrors_stepped[i] = 0.122569
+i = 83; acerrors_stepped[i] = 0.122569
+i = 84; acerrors_stepped[i] = 0.122570
+i = 85; acerrors_stepped[i] = 0.122571
+i = 86; acerrors_stepped[i] = 0.122571
+i = 87; acerrors_stepped[i] = 0.122571
+i = 88; acerrors_stepped[i] = 0.122572
+i = 89; acerrors_stepped[i] = 0.122572
+i = 90; acerrors_stepped[i] = 0.122571
+i = 91; acerrors_stepped[i] = 0.122571
+i = 92; acerrors_stepped[i] = 0.122570
+i = 93; acerrors_stepped[i] = 0.122570
+i = 94; acerrors_stepped[i] = 0.122569
+i = 95; acerrors_stepped[i] = 0.122566
+i = 96; acerrors_stepped[i] = 0.122562
+i = 97; acerrors_stepped[i] = 0.122561
+i = 98; acerrors_stepped[i] = 0.122565
+i = 99; acerrors_stepped[i] = 0.122569
+i = 100; acerrors_stepped[i] = 0.122571
+i = 101; acerrors_stepped[i] = 0.122571
+i = 102; acerrors_stepped[i] = 0.122572
+i = 103; acerrors_stepped[i] = 0.122572
+i = 104; acerrors_stepped[i] = 0.122572
+i = 105; acerrors_stepped[i] = 0.122571
+i = 106; acerrors_stepped[i] = 0.122571
+i = 107; acerrors_stepped[i] = 0.122570
+i = 108; acerrors_stepped[i] = 0.122569
+i = 109; acerrors_stepped[i] = 0.122568
+i = 110; acerrors_stepped[i] = 0.122565
+i = 111; acerrors_stepped[i] = 0.122560
+i = 112; acerrors_stepped[i] = 0.122559
+i = 113; acerrors_stepped[i] = 0.122562
+i = 114; acerrors_stepped[i] = 0.122568
+i = 115; acerrors_stepped[i] = 0.122570
+i = 116; acerrors_stepped[i] = 0.122571
+i = 117; acerrors_stepped[i] = 0.122572
+i = 118; acerrors_stepped[i] = 0.122572
+i = 119; acerrors_stepped[i] = 0.122572
+i = 120; acerrors_stepped[i] = 0.122572
+i = 121; acerrors_stepped[i] = 0.122572
+i = 122; acerrors_stepped[i] = 0.122570
+i = 123; acerrors_stepped[i] = 0.122569
+i = 124; acerrors_stepped[i] = 0.122568
+i = 125; acerrors_stepped[i] = 0.122566
+i = 126; acerrors_stepped[i] = 0.122563
+i = 127; acerrors_stepped[i] = 0.122562
+i = 128; acerrors_stepped[i] = 0.122563
+i = 129; acerrors_stepped[i] = 0.122567
+i = 130; acerrors_stepped[i] = 0.122569
+i = 131; acerrors_stepped[i] = 0.122571
+i = 132; acerrors_stepped[i] = 0.122572
+i = 133; acerrors_stepped[i] = 0.122572
+i = 134; acerrors_stepped[i] = 0.122572
+i = 135; acerrors_stepped[i] = 0.122572
+i = 136; acerrors_stepped[i] = 0.122572
+i = 137; acerrors_stepped[i] = 0.122571
+i = 138; acerrors_stepped[i] = 0.122570
+i = 139; acerrors_stepped[i] = 0.122568
+i = 140; acerrors_stepped[i] = 0.122567
+i = 141; acerrors_stepped[i] = 0.122567
+i = 142; acerrors_stepped[i] = 0.122567
+i = 143; acerrors_stepped[i] = 0.122566
+i = 144; acerrors_stepped[i] = 0.122567
+i = 145; acerrors_stepped[i] = 0.122569
+i = 146; acerrors_stepped[i] = 0.122571
+i = 147; acerrors_stepped[i] = 0.122572
+i = 148; acerrors_stepped[i] = 0.122572
+i = 149; acerrors_stepped[i] = 0.122572
+i = 150; acerrors_stepped[i] = 0.122572
+i = 151; acerrors_stepped[i] = 0.122572
+i = 152; acerrors_stepped[i] = 0.122571
+i = 153; acerrors_stepped[i] = 0.122571
+i = 154; acerrors_stepped[i] = 0.122570
+i = 155; acerrors_stepped[i] = 0.122570
+i = 156; acerrors_stepped[i] = 0.122570
+i = 157; acerrors_stepped[i] = 0.122570
+i = 158; acerrors_stepped[i] = 0.122569
+i = 159; acerrors_stepped[i] = 0.122569
+i = 160; acerrors_stepped[i] = 0.122570
+i = 161; acerrors_stepped[i] = 0.122571
+i = 162; acerrors_stepped[i] = 0.122572
+i = 163; acerrors_stepped[i] = 0.122572
+i = 164; acerrors_stepped[i] = 0.122572
+i = 165; acerrors_stepped[i] = 0.122572
+i = 166; acerrors_stepped[i] = 0.122572
+i = 167; acerrors_stepped[i] = 0.122572
+i = 168; acerrors_stepped[i] = 0.122572
+i = 169; acerrors_stepped[i] = 0.122571
+i = 170; acerrors_stepped[i] = 0.122571
+i = 171; acerrors_stepped[i] = 0.122571
+i = 172; acerrors_stepped[i] = 0.122571
+i = 173; acerrors_stepped[i] = 0.122570
+i = 174; acerrors_stepped[i] = 0.122571
+i = 175; acerrors_stepped[i] = 0.122571
+i = 176; acerrors_stepped[i] = 0.122571
+i = 177; acerrors_stepped[i] = 0.122572
+i = 178; acerrors_stepped[i] = 0.122572
+i = 179; acerrors_stepped[i] = 0.122571
+i = 180; acerrors_stepped[i] = 0.122571
+i = 181; acerrors_stepped[i] = 0.122572
+i = 182; acerrors_stepped[i] = 0.122572
+i = 183; acerrors_stepped[i] = 0.122571
+i = 184; acerrors_stepped[i] = 0.122571
+i = 185; acerrors_stepped[i] = 0.122571
+i = 186; acerrors_stepped[i] = 0.122571
+i = 187; acerrors_stepped[i] = 0.122571
+i = 188; acerrors_stepped[i] = 0.122571
+i = 189; acerrors_stepped[i] = 0.122571
+i = 190; acerrors_stepped[i] = 0.122571
+i = 191; acerrors_stepped[i] = 0.122571
+i = 192; acerrors_stepped[i] = 0.122572
+i = 193; acerrors_stepped[i] = 0.122572
+i = 194; acerrors_stepped[i] = 0.122571
+i = 195; acerrors_stepped[i] = 0.122571
+i = 196; acerrors_stepped[i] = 0.122572
+i = 197; acerrors_stepped[i] = 0.122572
+i = 198; acerrors_stepped[i] = 0.122572
+i = 199; acerrors_stepped[i] = 0.122572
+i = 200; acerrors_stepped[i] = 0.122572
+i = 201; acerrors_stepped[i] = 0.122572
+i = 202; acerrors_stepped[i] = 0.122571
+i = 203; acerrors_stepped[i] = 0.122571
+i = 204; acerrors_stepped[i] = 0.122571
+i = 205; acerrors_stepped[i] = 0.122571
+i = 206; acerrors_stepped[i] = 0.122571
+i = 207; acerrors_stepped[i] = 0.122572
+i = 208; acerrors_stepped[i] = 0.122571
+i = 209; acerrors_stepped[i] = 0.122571
+compute estimated gradient, its length, whence dh_uvec
+line search:
+  acerror_prev 0.122570
+  dhdist 0.100000, acerror 0.119544
+  dhdist 0.200000, acerror 0.116870
+  dhdist 0.300000, acerror 0.114512
+  dhdist 0.400000, acerror 0.112439
+  dhdist 0.500000, acerror 0.110622
+  dhdist 0.600000, acerror 0.109032
+  dhdist 0.700000, acerror 0.107643
+  dhdist 0.800000, acerror 0.106431
+  dhdist 0.900000, acerror 0.105375
+  dhdist 1.000000, acerror 0.104453
+  dhdist 1.100000, acerror 0.103648
+  dhdist 1.200000, acerror 0.102947
+  dhdist 1.300000, acerror 0.102338
+  dhdist 1.400000, acerror 0.101814
+  dhdist 1.500000, acerror 0.101372
+  dhdist 1.600000, acerror 0.101008
+  dhdist 1.700000, acerror 0.100718
+  dhdist 1.800000, acerror 0.100499
+  dhdist 1.900000, acerror 0.100345
+  dhdist 2.000000, acerror 0.100249
+  dhdist 2.100000, acerror 0.100204
+  dhdist 2.200000, acerror 0.100204
+  dhdist 2.300000, acerror 0.100241
+  dhdist 2.250000, acerror 0.100218
+  dhdist 2.200000, acerror 0.100204
+  dhdist 2.150000, acerror 0.100199
+  dhdist 2.100000, acerror 0.100204
+  dhdist 2.125000, acerror 0.100200
+  dhdist 2.150000, acerror 0.100199
+  dhdist 2.175000, acerror 0.100200
+  dhdist 2.162500, acerror 0.100199
+  dhdist 2.150000, acerror 0.100199
+  dhdist 2.137500, acerror 0.100199
+  dhdist 2.143750, acerror 0.100199
+  dhdist 2.150000, acerror 0.100199
+  dhdist 2.156250, acerror 0.100199
+acerror_bspt for basepoint 1: 0.100199
+ibspt 1
+compute error at stepped-to points
+i = 0; acerrors_stepped[i] = 0.100199
+i = 1; acerrors_stepped[i] = 0.100199
+i = 2; acerrors_stepped[i] = 0.100200
+i = 3; acerrors_stepped[i] = 0.100200
+i = 4; acerrors_stepped[i] = 0.100199
+i = 5; acerrors_stepped[i] = 0.100199
+i = 6; acerrors_stepped[i] = 0.100199
+i = 7; acerrors_stepped[i] = 0.100199
+i = 8; acerrors_stepped[i] = 0.100200
+i = 9; acerrors_stepped[i] = 0.100200
+i = 10; acerrors_stepped[i] = 0.100200
+i = 11; acerrors_stepped[i] = 0.100200
+i = 12; acerrors_stepped[i] = 0.100200
+i = 13; acerrors_stepped[i] = 0.100200
+i = 14; acerrors_stepped[i] = 0.100199
+i = 15; acerrors_stepped[i] = 0.100199
+i = 16; acerrors_stepped[i] = 0.100200
+i = 17; acerrors_stepped[i] = 0.100200
+i = 18; acerrors_stepped[i] = 0.100199
+i = 19; acerrors_stepped[i] = 0.100199
+i = 20; acerrors_stepped[i] = 0.100199
+i = 21; acerrors_stepped[i] = 0.100199
+i = 22; acerrors_stepped[i] = 0.100199
+i = 23; acerrors_stepped[i] = 0.100199
+i = 24; acerrors_stepped[i] = 0.100200
+i = 25; acerrors_stepped[i] = 0.100200
+i = 26; acerrors_stepped[i] = 0.100200
+i = 27; acerrors_stepped[i] = 0.100200
+i = 28; acerrors_stepped[i] = 0.100200
+i = 29; acerrors_stepped[i] = 0.100199
+i = 30; acerrors_stepped[i] = 0.100200
+i = 31; acerrors_stepped[i] = 0.100200
+i = 32; acerrors_stepped[i] = 0.100200
+i = 33; acerrors_stepped[i] = 0.100200
+i = 34; acerrors_stepped[i] = 0.100200
+i = 35; acerrors_stepped[i] = 0.100199
+i = 36; acerrors_stepped[i] = 0.100199
+i = 37; acerrors_stepped[i] = 0.100199
+i = 38; acerrors_stepped[i] = 0.100199
+i = 39; acerrors_stepped[i] = 0.100199
+i = 40; acerrors_stepped[i] = 0.100199
+i = 41; acerrors_stepped[i] = 0.100199
+i = 42; acerrors_stepped[i] = 0.100200
+i = 43; acerrors_stepped[i] = 0.100200
+i = 44; acerrors_stepped[i] = 0.100199
+i = 45; acerrors_stepped[i] = 0.100199
+i = 46; acerrors_stepped[i] = 0.100199
+i = 47; acerrors_stepped[i] = 0.100199
+i = 48; acerrors_stepped[i] = 0.100200
+i = 49; acerrors_stepped[i] = 0.100200
+i = 50; acerrors_stepped[i] = 0.100199
+i = 51; acerrors_stepped[i] = 0.100199
+i = 52; acerrors_stepped[i] = 0.100199
+i = 53; acerrors_stepped[i] = 0.100199
+i = 54; acerrors_stepped[i] = 0.100199
+i = 55; acerrors_stepped[i] = 0.100199
+i = 56; acerrors_stepped[i] = 0.100199
+i = 57; acerrors_stepped[i] = 0.100199
+i = 58; acerrors_stepped[i] = 0.100199
+i = 59; acerrors_stepped[i] = 0.100200
+i = 60; acerrors_stepped[i] = 0.100199
+i = 61; acerrors_stepped[i] = 0.100199
+i = 62; acerrors_stepped[i] = 0.100199
+i = 63; acerrors_stepped[i] = 0.100199
+i = 64; acerrors_stepped[i] = 0.100200
+i = 65; acerrors_stepped[i] = 0.100199
+i = 66; acerrors_stepped[i] = 0.100199
+i = 67; acerrors_stepped[i] = 0.100199
+i = 68; acerrors_stepped[i] = 0.100199
+i = 69; acerrors_stepped[i] = 0.100199
+i = 70; acerrors_stepped[i] = 0.100199
+i = 71; acerrors_stepped[i] = 0.100199
+i = 72; acerrors_stepped[i] = 0.100199
+i = 73; acerrors_stepped[i] = 0.100199
+i = 74; acerrors_stepped[i] = 0.100200
+i = 75; acerrors_stepped[i] = 0.100199
+i = 76; acerrors_stepped[i] = 0.100199
+i = 77; acerrors_stepped[i] = 0.100199
+i = 78; acerrors_stepped[i] = 0.100199
+i = 79; acerrors_stepped[i] = 0.100199
+i = 80; acerrors_stepped[i] = 0.100199
+i = 81; acerrors_stepped[i] = 0.100198
+i = 82; acerrors_stepped[i] = 0.100199
+i = 83; acerrors_stepped[i] = 0.100199
+i = 84; acerrors_stepped[i] = 0.100199
+i = 85; acerrors_stepped[i] = 0.100199
+i = 86; acerrors_stepped[i] = 0.100199
+i = 87; acerrors_stepped[i] = 0.100199
+i = 88; acerrors_stepped[i] = 0.100200
+i = 89; acerrors_stepped[i] = 0.100200
+i = 90; acerrors_stepped[i] = 0.100199
+i = 91; acerrors_stepped[i] = 0.100199
+i = 92; acerrors_stepped[i] = 0.100199
+i = 93; acerrors_stepped[i] = 0.100199
+i = 94; acerrors_stepped[i] = 0.100199
+i = 95; acerrors_stepped[i] = 0.100199
+i = 96; acerrors_stepped[i] = 0.100198
+i = 97; acerrors_stepped[i] = 0.100199
+i = 98; acerrors_stepped[i] = 0.100199
+i = 99; acerrors_stepped[i] = 0.100200
+i = 100; acerrors_stepped[i] = 0.100200
+i = 101; acerrors_stepped[i] = 0.100200
+i = 102; acerrors_stepped[i] = 0.100200
+i = 103; acerrors_stepped[i] = 0.100200
+i = 104; acerrors_stepped[i] = 0.100200
+i = 105; acerrors_stepped[i] = 0.100200
+i = 106; acerrors_stepped[i] = 0.100199
+i = 107; acerrors_stepped[i] = 0.100199
+i = 108; acerrors_stepped[i] = 0.100199
+i = 109; acerrors_stepped[i] = 0.100199
+i = 110; acerrors_stepped[i] = 0.100199
+i = 111; acerrors_stepped[i] = 0.100200
+i = 112; acerrors_stepped[i] = 0.100200
+i = 113; acerrors_stepped[i] = 0.100200
+i = 114; acerrors_stepped[i] = 0.100200
+i = 115; acerrors_stepped[i] = 0.100200
+i = 116; acerrors_stepped[i] = 0.100199
+i = 117; acerrors_stepped[i] = 0.100199
+i = 118; acerrors_stepped[i] = 0.100200
+i = 119; acerrors_stepped[i] = 0.100200
+i = 120; acerrors_stepped[i] = 0.100200
+i = 121; acerrors_stepped[i] = 0.100199
+i = 122; acerrors_stepped[i] = 0.100199
+i = 123; acerrors_stepped[i] = 0.100198
+i = 124; acerrors_stepped[i] = 0.100199
+i = 125; acerrors_stepped[i] = 0.100200
+i = 126; acerrors_stepped[i] = 0.100200
+i = 127; acerrors_stepped[i] = 0.100200
+i = 128; acerrors_stepped[i] = 0.100200
+i = 129; acerrors_stepped[i] = 0.100200
+i = 130; acerrors_stepped[i] = 0.100199
+i = 131; acerrors_stepped[i] = 0.100199
+i = 132; acerrors_stepped[i] = 0.100199
+i = 133; acerrors_stepped[i] = 0.100200
+i = 134; acerrors_stepped[i] = 0.100200
+i = 135; acerrors_stepped[i] = 0.100200
+i = 136; acerrors_stepped[i] = 0.100199
+i = 137; acerrors_stepped[i] = 0.100199
+i = 138; acerrors_stepped[i] = 0.100198
+i = 139; acerrors_stepped[i] = 0.100199
+i = 140; acerrors_stepped[i] = 0.100200
+i = 141; acerrors_stepped[i] = 0.100200
+i = 142; acerrors_stepped[i] = 0.100200
+i = 143; acerrors_stepped[i] = 0.100200
+i = 144; acerrors_stepped[i] = 0.100200
+i = 145; acerrors_stepped[i] = 0.100199
+i = 146; acerrors_stepped[i] = 0.100199
+i = 147; acerrors_stepped[i] = 0.100200
+i = 148; acerrors_stepped[i] = 0.100200
+i = 149; acerrors_stepped[i] = 0.100200
+i = 150; acerrors_stepped[i] = 0.100200
+i = 151; acerrors_stepped[i] = 0.100200
+i = 152; acerrors_stepped[i] = 0.100199
+i = 153; acerrors_stepped[i] = 0.100199
+i = 154; acerrors_stepped[i] = 0.100199
+i = 155; acerrors_stepped[i] = 0.100199
+i = 156; acerrors_stepped[i] = 0.100200
+i = 157; acerrors_stepped[i] = 0.100200
+i = 158; acerrors_stepped[i] = 0.100200
+i = 159; acerrors_stepped[i] = 0.100200
+i = 160; acerrors_stepped[i] = 0.100199
+i = 161; acerrors_stepped[i] = 0.100200
+i = 162; acerrors_stepped[i] = 0.100200
+i = 163; acerrors_stepped[i] = 0.100200
+i = 164; acerrors_stepped[i] = 0.100200
+i = 165; acerrors_stepped[i] = 0.100199
+i = 166; acerrors_stepped[i] = 0.100200
+i = 167; acerrors_stepped[i] = 0.100199
+i = 168; acerrors_stepped[i] = 0.100199
+i = 169; acerrors_stepped[i] = 0.100199
+i = 170; acerrors_stepped[i] = 0.100199
+i = 171; acerrors_stepped[i] = 0.100199
+i = 172; acerrors_stepped[i] = 0.100199
+i = 173; acerrors_stepped[i] = 0.100200
+i = 174; acerrors_stepped[i] = 0.100200
+i = 175; acerrors_stepped[i] = 0.100199
+i = 176; acerrors_stepped[i] = 0.100199
+i = 177; acerrors_stepped[i] = 0.100200
+i = 178; acerrors_stepped[i] = 0.100200
+i = 179; acerrors_stepped[i] = 0.100200
+i = 180; acerrors_stepped[i] = 0.100199
+i = 181; acerrors_stepped[i] = 0.100200
+i = 182; acerrors_stepped[i] = 0.100199
+i = 183; acerrors_stepped[i] = 0.100199
+i = 184; acerrors_stepped[i] = 0.100199
+i = 185; acerrors_stepped[i] = 0.100199
+i = 186; acerrors_stepped[i] = 0.100199
+i = 187; acerrors_stepped[i] = 0.100199
+i = 188; acerrors_stepped[i] = 0.100199
+i = 189; acerrors_stepped[i] = 0.100199
+i = 190; acerrors_stepped[i] = 0.100199
+i = 191; acerrors_stepped[i] = 0.100199
+i = 192; acerrors_stepped[i] = 0.100200
+i = 193; acerrors_stepped[i] = 0.100200
+i = 194; acerrors_stepped[i] = 0.100199
+i = 195; acerrors_stepped[i] = 0.100199
+i = 196; acerrors_stepped[i] = 0.100200
+i = 197; acerrors_stepped[i] = 0.100200
+i = 198; acerrors_stepped[i] = 0.100200
+i = 199; acerrors_stepped[i] = 0.100199
+i = 200; acerrors_stepped[i] = 0.100199
+i = 201; acerrors_stepped[i] = 0.100199
+i = 202; acerrors_stepped[i] = 0.100199
+i = 203; acerrors_stepped[i] = 0.100199
+i = 204; acerrors_stepped[i] = 0.100199
+i = 205; acerrors_stepped[i] = 0.100199
+i = 206; acerrors_stepped[i] = 0.100199
+i = 207; acerrors_stepped[i] = 0.100199
+i = 208; acerrors_stepped[i] = 0.100199
+i = 209; acerrors_stepped[i] = 0.100199
+compute estimated gradient, its length, whence dh_uvec
+line search:
+  acerror_prev 0.100199
+  dhdist 0.100000, acerror 0.099414
+  dhdist 0.200000, acerror 0.098683
+  dhdist 0.300000, acerror 0.098008
+  dhdist 0.400000, acerror 0.097390
+  dhdist 0.500000, acerror 0.096832
+  dhdist 0.600000, acerror 0.096336
+  dhdist 0.700000, acerror 0.095903
+  dhdist 0.800000, acerror 0.095535
+  dhdist 0.900000, acerror 0.095232
+  dhdist 1.000000, acerror 0.094995
+  dhdist 1.100000, acerror 0.094822
+  dhdist 1.200000, acerror 0.094714
+  dhdist 1.300000, acerror 0.094668
+  dhdist 1.400000, acerror 0.094684
+  dhdist 1.350000, acerror 0.094668
+  dhdist 1.300000, acerror 0.094668
+  dhdist 1.250000, acerror 0.094683
+  dhdist 1.275000, acerror 0.094674
+  dhdist 1.300000, acerror 0.094668
+  dhdist 1.325000, acerror 0.094666
+  dhdist 1.350000, acerror 0.094668
+  dhdist 1.337500, acerror 0.094667
+  dhdist 1.325000, acerror 0.094666
+  dhdist 1.312500, acerror 0.094667
+  dhdist 1.318750, acerror 0.094666
+  dhdist 1.325000, acerror 0.094666
+  dhdist 1.331250, acerror 0.094666
+acerror_bspt for basepoint 2: 0.094666

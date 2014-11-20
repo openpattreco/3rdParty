@@ -1,0 +1,110 @@
+Expect a usage message, and three "ERROR : get_wh : raw or unknown image type".
+--------------------------------------------------------------------------------
+Image Type: no input file
+Expected Result: usage message expected
+rdimgwh 
+Usage:
+rdimgwh [options] image-file ...
+    AN2K Image Selection Options:
+	-f n[:i]	finger position n [and impression type i]
+	-i n		impression type
+	-t n		logical record type
+        -q n            pre-computed NIST quality metric
+        -n n		record number
+    Other Options:
+	-v		enable verbose mode
+--------------------------------------------------------------------------------
+Image Type: no input file
+Expected Result: version message expected
+rdimgwh -version
+Standard Version: ANSI/NIST-ITL 1-2007
+NBIS Non-Export Control Software Version: Release 3.1.0
+--------------------------------------------------------------------------------
+Image Type: raw fingerprint
+Expected Result: raw image error
+rdimgwh ../../data/finger/gray/raw/finger.raw
+../../data/finger/gray/raw/finger.raw ERROR : get_wh : raw or unknown image type
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with two raw images in records 3 and 5
+Expected Result: two raw image errors
+rdimgwh ../../../an2k/data/nist.an2
+../../../an2k/data/nist.an2:3 ERROR : get_wh : raw or unknown image type
+../../../an2k/data/nist.an2:5 ERROR : get_wh : raw or unknown image type
+--------------------------------------------------------------------------------
+Image Type: WSQ finger
+Expected Result: 500 x 500
+rdimgwh ../../data/finger/gray/wsq/finger.wsq
+../../data/finger/gray/wsq/finger.wsq w=500 h=500
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with WSQ images, selecting fingers 1 and 2
+Expected Result: records 2 and 3, both 804 x 752
+rdimgwh -f 1,2 ../../../an2k/data/a001-seg.an2
+../../../an2k/data/a001-seg.an2:2 w=804, h=752
+../../../an2k/data/a001-seg.an2:3 w=804, h=752
+--------------------------------------------------------------------------------
+Image Type: grayscale JPEGB face
+Expected Result: 768 x 1024
+rdimgwh ../../data/face/gray/jpegb/face.jpb
+../../data/face/gray/jpegb/face.jpb w=768 h=1024
+--------------------------------------------------------------------------------
+Image Type: color JPEGB face
+Expected Result: 768 x 1024
+rdimgwh ../../data/face/rgb/jpegb/face.jpb
+../../data/face/rgb/jpegb/face.jpb w=768 h=1024
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with JPEGB images, selecting IDCs 0 and 1
+Expected Result: records 2 and 3, both 804 x 752
+rdimgwh -n 0,1 ../../../an2k/data/a001_jpb.an2
+../../../an2k/data/a001_jpb.an2:2 w=804, h=752
+../../../an2k/data/a001_jpb.an2:3 w=804, h=752
+--------------------------------------------------------------------------------
+Image Type: grayscale JPEGL finger
+Expected Result: 500 x 500
+rdimgwh ../../data/finger/gray/jpegl/finger.jpl
+../../data/finger/gray/jpegl/finger.jpl w=500 h=500
+--------------------------------------------------------------------------------
+Image Type: color JPEGL face
+Expected Result: 768 x 1024
+rdimgwh ../../data/face/rgb/jpegl/face.jpl
+../../data/face/rgb/jpegl/face.jpl w=768 h=1024
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with JPEGL images, selecting index fingers
+Expected Result: records 3 and 8, 804 x 752 and 804 x 748
+rdimgwh -f index ../../../an2k/data/a001_jpl.an2
+../../../an2k/data/a001_jpl.an2:3 w=804, h=752
+../../../an2k/data/a001_jpl.an2:8 w=804, h=748
+--------------------------------------------------------------------------------
+Image Type: color JP2 face
+Expected Result: 768 x 1024
+rdimgwh ../../data/face/rgb/jp2/face.jp2
+../../data/face/rgb/jp2/face.jp2 w=768 h=1024
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with JP2 images, selecting plain impressions
+Expected Result: records: 12, 13, 14, 15, heights: 1000, widths: 1608, 412, 392, 1572
+rdimgwh -i plain ../../../an2k/data/a001_jp2.an2
+../../../an2k/data/a001_jp2.an2:12 w=1608, h=1000
+../../../an2k/data/a001_jp2.an2:13 w=412, h=1000
+../../../an2k/data/a001_jp2.an2:14 w=392, h=1000
+../../../an2k/data/a001_jp2.an2:15 w=1572, h=1000
+--------------------------------------------------------------------------------
+Image Type: color JP2L face
+Expected Result: 768 x 1024
+rdimgwh ../../data/face/rgb/jp2/face.jp2l
+../../data/face/rgb/jp2/face.jp2l w=768 h=1024
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with JP2L images, selecting rolled thumbs
+Expected Result: records 2 and 7, 804 x 752 and 804 x 748
+rdimgwh -f thumb:rolled ../../../an2k/data/a001_jp2l.an2
+../../../an2k/data/a001_jp2l.an2:2 w=804, h=752
+../../../an2k/data/a001_jp2l.an2:7 w=804, h=748
+--------------------------------------------------------------------------------
+Image Type: color PNG face
+Expected Result: 768 x 1024
+rdimgwh ../../data/face/rgb/png/face.png
+../../data/face/rgb/png/face.png w=768 h=1024
+--------------------------------------------------------------------------------
+Image Type: ANSI/NIST file with PNG images, selecting left middle finger
+Expected Result: record 9, 804 x 748
+rdimgwh -f 'left middle' ../../../an2k/data/a001_png.an2
+../../../an2k/data/a001_png.an2:9 w=804, h=748
+--------------------------------------------------------------------------------

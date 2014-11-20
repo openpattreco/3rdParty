@@ -1,0 +1,4 @@
+DESCRIPTION: 128 Eigenvectors, made by eva_evt from covariance ../meancov/fv1-9_nist.cov
+TYPE: matrix
+ASCII OR BINARY: binary
+DIMENSIONS: 128 by 1680

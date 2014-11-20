@@ -1,0 +1,14 @@
+NIST_COM 9
+PIX_WIDTH 500
+PIX_HEIGHT 500
+PIX_DEPTH 8
+PPI 500
+LOSSY 0
+COLORSPACE GRAY
+COMPRESSION JPEGL
+JPEGL_PREDICT 4
+
+This is a comment block.
+It was inserted by the
+write comment utility.
+

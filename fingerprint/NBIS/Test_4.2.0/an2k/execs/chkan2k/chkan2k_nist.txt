@@ -1,0 +1,138 @@
+/c/srcp4/projects/NBIS/Test/an2k/execs/chkan2k
+----------------------------------------
+----------------------------------------
+This checks type 13 and 14 raw grayscale fingerprint images, with ANSI/NIST minutiae
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/nist.an2
+ERROR CHECK: ../../data/nist.an2: [1.4.1.1] [Type-1.004] TOT item size 8 bytes, not 3 to 4 as required: 'NISTDATA<GS>'
+----------------------------------------
+----------------------------------------
+This checks two type 4 raw grayscale fingerprint images, with IAFIS minutiae
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/iafis.an2
+ERROR CHECK: ../../data/iafis.an2: [1.4.1.1] [Type-1.004] TOT item size 8 bytes, not 3 to 4 as required: 'NISTDATA<GS>'
+----------------------------------------
+----------------------------------------
+This checks type 14 WSQ grayscale fingerprint images, with SEG fields added by nfseg,
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/a001-seg.an2
+ERROR CHECK: ../../data/a001-seg.an2: [2.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [3.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [4.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [5.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [6.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [7.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [8.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [9.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [10.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [11.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [12.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [13.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [13.14.1.1] [Type-14.021] SEG unexpected numerical item value: 12.
+ERROR CHECK: ../../data/a001-seg.an2: [14.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-seg.an2: [14.14.1.1] [Type-14.021] SEG unexpected numerical item value: 11.
+ERROR CHECK: ../../data/a001-seg.an2: [15.14] [Type-14.021] SEG requires ANSI/NIST version 400, file indicates version 300.
+----------------------------------------
+----------------------------------------
+This checks type 14 WSQ grayscale fingerprint images, with ASEG fields added by nfseg,
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/a001-aseg.an2
+ERROR CHECK: ../../data/a001-aseg.an2: [2.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [3.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [4.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [5.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [6.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [7.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [8.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [9.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [10.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [11.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [12.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [13.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [13.14.1.1] [Type-14.025] ASEG unexpected numerical item value: 12.
+ERROR CHECK: ../../data/a001-aseg.an2: [14.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+ERROR CHECK: ../../data/a001-aseg.an2: [14.14.1.1] [Type-14.025] ASEG unexpected numerical item value: 11.
+ERROR CHECK: ../../data/a001-aseg.an2: [15.14] [Type-14.025] ASEG requires ANSI/NIST version 400, file indicates version 300.
+----------------------------------------
+----------------------------------------
+This checks JPB grayscale fingerprint images
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/a001_jpb.an2
+----------------------------------------
+----------------------------------------
+This checks JPL grayscale fingerprint images
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/a001_jpl.an2
+----------------------------------------
+----------------------------------------
+This checks PNG grayscale fingerprint images
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/a001_png.an2
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [2] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [2.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [3] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [3.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [4] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [4.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [5] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [5.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [6] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [6.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [7] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [7.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [8] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [8.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [9] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [9.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [10] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [10.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [11] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [11.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [12] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [12.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [13] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [13.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [14] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [14.18] [Type-14.999] DATA cannot decode image, error code 0
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [15] [Type-14].
+Image record ignored.
+ERROR CHECK: ../../data/a001_png.an2: [15.18] [Type-14.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks one RAW color face
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/face_raw.an2
+----------------------------------------
+----------------------------------------
+This checks one JPEGB color face
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/face_jpb.an2
+----------------------------------------
+----------------------------------------
+This checks one JPEGL color face
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/face_jpl.an2
+----------------------------------------
+----------------------------------------
+This checks one JP2 color face
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/face_jp2.an2
+WARNING : decode_tagged_field_image : unsupported compression algorithm JP2 in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/face_jp2.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks one JP2L color face
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/face_jp2l.an2
+WARNING : decode_tagged_field_image : unsupported compression algorithm JP2L in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/face_jp2l.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks one PNG color face
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/face_png.an2
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/face_png.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0

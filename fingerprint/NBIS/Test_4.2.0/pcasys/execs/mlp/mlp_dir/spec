@@ -1,0 +1,253 @@
+train_or_test train  /* C style comments allowed */
+do_confuse true /* make confusion matrices */
+do_cvr true     /* make correct-vs.-reject table */
+
+lcn_scn_infile patnames
+purpose classifier /* instead of fitter */
+errfunc mse
+acfunc_hids sinusoid; acfunc_outs sinusoid
+priors both;pattern_wts_infile patwts;class_wts_infile priors
+boltzmann square_prune /* or can be no_prune or square_prune; or,
+code-numbers 0, 2, and 3 can be used instead of no_prune, abs_prune,
+and square_prune */
+temperature 1.0e-5 /* if boltzmann is no_prune, one should leave
+  temperature unset, either by totally omitting to mention temperature,
+  of by leaving the word temperature in but removing (or commenting
+  out) the value) */
+patterns_infile fv1-9mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 24300
+ninps 128; nhids 128; nouts 6
+regfac 2.00
+niter_max 50; egoal 0.000; gwgoal 0.0; nfreq 10; errdel 0.99
+nokdel 1
+oklvl 0.0
+seed 12347
+wts_outfile trn1.wts
+short_outfile trn1.err
+show_acs_times_1000 false; long_outfile trn1l.err
+
+
+/* empty lines, and lines containing only spaces and/or tabs, are
+ignored */
+
+newrun /* put this (or NEWRUN) between each run and the next */
+
+/* Because this is a test run, it leaves stopping conditions unset
+and it also leave "architecture" specifications such as nhids
+and acfunc_outs unset. */
+train_or_test test
+do_confuse true
+do_cvr true
+lcn_scn_infile patnames
+errfunc mse
+priors class;class_wts_infile priors
+patterns_infile sv10mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 2700
+regfac 2.0
+oklvl 0.0
+wts_infile trn1.wts
+short_outfile tst1.err /* summary output file */
+
+newrun
+train_or_test train  /* C style comments allowed */
+do_confuse true /* make confusion matrices */
+do_cvr true     /* make correct-vs.-reject table */
+lcn_scn_infile patnames
+errfunc mse
+priors both;pattern_wts_infile patwts;class_wts_infile priors
+boltzmann square_prune /* or can be no_prune or square_prune; or,
+code-numbers 0, 2, and 3 can be used instead of no_prune, abs_prune,
+and square_prune */
+temperature 1.0e-5 /* if boltzmann is no_prune, one should leave
+  temperature unset, either by totally omitting to mention temperature,
+  of by leaving the word temperature in but removing (or commenting
+  out) the value) */
+patterns_infile fv1-9mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 24300
+regfac 1.00
+niter_max 50; egoal 0.000; gwgoal 0.0; nfreq 10; errdel 0.99
+nokdel 1
+oklvl 0.0
+wts_infile trn1.wts
+wts_outfile trn2.wts
+short_outfile trn2.err
+show_acs_times_1000 false; long_outfile trn2l.err
+
+/* empty lines, and lines containing only spaces and/or tabs, are
+ignored */
+
+newrun /* put this (or NEWRUN) between each run and the next */
+
+/* Because this is a test run, it leaves stopping conditions unset
+and it also leave "architecture" specifications such as nhids
+and acfunc_outs unset. */
+train_or_test test
+do_confuse true
+do_cvr true
+lcn_scn_infile patnames
+errfunc mse
+priors class;class_wts_infile priors
+patterns_infile sv10mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 2700
+regfac 1.0
+oklvl 0.0
+wts_infile trn2.wts
+short_outfile tst2.err /* summary output file */
+
+newrun
+train_or_test train  /* C style comments allowed */
+do_confuse true /* make confusion matrices */
+do_cvr true     /* make correct-vs.-reject table */
+lcn_scn_infile patnames
+errfunc mse
+priors both;pattern_wts_infile patwts;class_wts_infile priors
+boltzmann square_prune /* or can be no_prune or square_prune; or,
+code-numbers 0, 2, and 3 can be used instead of no_prune, abs_prune,
+and square_prune */
+temperature 1.0e-5 /* if boltzmann is no_prune, one should leave
+  temperature unset, either by totally omitting to mention temperature,
+  of by leaving the word temperature in but removing (or commenting
+  out) the value) */
+patterns_infile fv1-9mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 24300
+regfac 0.5
+niter_max 50; egoal 0.000; gwgoal 0.0; nfreq 10; errdel 0.99
+nokdel 1
+oklvl 0.0
+wts_infile trn2.wts
+wts_outfile trn3.wts
+short_outfile trn3.err
+show_acs_times_1000 false; long_outfile trn3l.err
+
+/* empty lines, and lines containing only spaces and/or tabs, are
+ignored */
+
+newrun /* put this (or NEWRUN) between each run and the next */
+
+/* Because this is a test run, it leaves stopping conditions unset
+and it also leave "architecture" specifications such as nhids
+and acfunc_outs unset. */
+train_or_test test
+do_confuse true
+do_cvr true
+lcn_scn_infile patnames
+errfunc mse
+priors class;class_wts_infile priors
+patterns_infile sv10mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 2700
+regfac 0.5
+oklvl 0.0
+wts_infile trn3.wts
+short_outfile tst3.err /* summary output file */
+
+newrun
+train_or_test train  /* C style comments allowed */
+do_confuse true /* make confusion matrices */
+do_cvr true     /* make correct-vs.-reject table */
+lcn_scn_infile patnames
+errfunc mse
+priors both;pattern_wts_infile patwts;class_wts_infile priors
+boltzmann square_prune /* or can be no_prune or square_prune; or,
+code-numbers 0, 2, and 3 can be used instead of no_prune, abs_prune,
+and square_prune */
+temperature 1.0e-5 /* if boltzmann is no_prune, one should leave
+  temperature unset, either by totally omitting to mention temperature,
+  of by leaving the word temperature in but removing (or commenting
+  out) the value) */
+patterns_infile fv1-9mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 24300
+regfac 0.2
+niter_max 50; egoal 0.000; gwgoal 0.0; nfreq 10; errdel 0.99
+nokdel 1
+oklvl 0.0
+wts_infile trn3.wts
+wts_outfile trn4.wts
+short_outfile trn4.err
+show_acs_times_1000 false; long_outfile trn4l.err
+
+/* empty lines, and lines containing only spaces and/or tabs, are
+ignored */
+
+newrun /* put this (or NEWRUN) between each run and the next */
+
+/* Because this is a test run, it leaves stopping conditions unset
+and it also leave "architecture" specifications such as nhids
+and acfunc_outs unset. */
+train_or_test test
+do_confuse true
+do_cvr true
+lcn_scn_infile patnames
+errfunc mse
+priors class;class_wts_infile priors
+patterns_infile sv10mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 2700
+regfac 0.2
+oklvl 0.0
+wts_infile trn4.wts
+short_outfile tst4.err /* summary output file */
+
+newrun
+train_or_test train  /* C style comments allowed */
+do_confuse true /* make confusion matrices */
+do_cvr true     /* make correct-vs.-reject table */
+lcn_scn_infile patnames
+errfunc mse
+priors both;pattern_wts_infile patwts;class_wts_infile priors
+boltzmann square_prune /* or can be no_prune or square_prune; or,
+code-numbers 0, 2, and 3 can be used instead of no_prune, abs_prune,
+and square_prune */
+temperature 1.0e-5 /* if boltzmann is no_prune, one should leave
+  temperature unset, either by totally omitting to mention temperature,
+  of by leaving the word temperature in but removing (or commenting
+  out) the value) */
+patterns_infile fv1-9mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 24300
+regfac 0.1
+niter_max 50; egoal 0.000; gwgoal 0.0; nfreq 10; errdel 0.99
+nokdel 1
+oklvl 0.0
+wts_infile trn4.wts
+wts_outfile trn5.wts
+short_outfile trn5.err
+show_acs_times_1000 false; long_outfile trn5l.err
+
+/* empty lines, and lines containing only spaces and/or tabs, are
+ignored */
+
+newrun /* put this (or NEWRUN) between each run and the next */
+
+/* Because this is a test run, it leaves stopping conditions unset
+and it also leave "architecture" specifications such as nhids
+and acfunc_outs unset. */
+train_or_test test
+do_confuse true
+do_cvr true
+lcn_scn_infile patnames
+errfunc mse
+priors class;class_wts_infile priors
+patterns_infile sv10mlp.kls
+patsfile_ascii_or_binary binary
+trgoff 0.
+npats 2700
+regfac 0.1
+oklvl 0.0
+wts_infile trn5.wts
+short_outfile tst5.err /* summary output file */

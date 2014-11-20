@@ -1,0 +1,19 @@
+# ERROR: Usage: pcasys [prsfile]
+# ERROR: Usage: pcasysx [prsfile]
+
+# The pcasys commands use the parms files
+# non-graphics ../../../pcasys/parms/pcasys.prs
+# graphics ../../../pcasys/parms/pcasysx.prs
+
+# The DEFAULT is to run the MLP classifier
+# .prs files are included for both MLP and PNN in
+# the ../../../pcasys/parms directory as follows:
+# MLP: pcasys.mlp and pcasysx.mlp
+# PNN: pcasys.pnn and pcasysx.pnn
+
+# The output for both MLP and PNN have been saved
+# in pcasys.mlp and pcasys.pnn
+
+pcasys
+
+pcasysx

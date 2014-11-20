@@ -1,0 +1,138 @@
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/pnm/003_R02_nist.pnm -m equal
+Software Info: "EncID:1 NIST01"
+0
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/pnm/003_R02_nist.pnm -m psnr
+Software Info: "EncID:1 NIST01"
+1.#INF00
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/pnm/003_R02_nist.pnm -m mse
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/pnm/003_R02_nist.pnm -m rmse
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/pnm/003_R02_nist.pnm -m pae
+Software Info: "EncID:1 NIST01"
+0
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/pnm/003_R02_nist.pnm -m mae
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossy_nist.jp2 -m equal
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+1
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossless_nist.jp2 -m equal
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy_nist.jp2 -m equal
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+1
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless_nist.jp2 -m equal
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossy_nist.jp2 -m psnr
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+38.757728
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossless_nist.jp2 -m psnr
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+1.#INF00
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy_nist.jp2 -m psnr
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+38.767227
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless_nist.jp2 -m psnr
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+1.#INF00
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossy_nist.jp2 -m mse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+8.655807
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossless_nist.jp2 -m mse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy_nist.jp2 -m mse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+8.636895
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless_nist.jp2 -m mse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossy_nist.jp2 -m rmse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+2.942075
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossless_nist.jp2 -m rmse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy_nist.jp2 -m rmse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+2.938860
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless_nist.jp2 -m rmse
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossy_nist.jp2 -m pae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+19
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossless_nist.jp2 -m pae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy_nist.jp2 -m pae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+19
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless_nist.jp2 -m pae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossy_nist.jp2 -m mae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+2.281001
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_custom_lossless_nist.jp2 -m mae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy_nist.jp2 -m mae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+2.277895
+imgcmp -f ../../data/finger/gray/jp2/003_R02_nist.jp2 -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless_nist.jp2 -m mae
+Software Info: "EncID:1 NIST01"
+Software Info: "EncID:1 NIST01"
+0.000000
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy_nist.pnm -m equal
+1
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy_nist.pnm -m psnr
+38.767227
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy_nist.pnm -m mse
+8.636895
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy_nist.pnm -m rmse
+2.938860
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy_nist.pnm -m pae
+19
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy_nist.pnm -m mae
+2.277895
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless_nist.pnm -m equal
+0
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless_nist.pnm -m psnr
+1.#INF00
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless_nist.pnm -m mse
+0.000000
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless_nist.pnm -m rmse
+0.000000
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless_nist.pnm -m pae
+0
+imgcmp -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless_nist.pnm -m mae
+0.000000

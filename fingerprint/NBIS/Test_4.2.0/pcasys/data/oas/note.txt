@@ -1,0 +1,29 @@
+fv1-9.cls - Class file for fv[1-9].oas combined
+fv1.cls - Class file for fv1.oas
+fv1.oas - Ridge flow (oas) features for files f0000001.wsq-f0002700.wsq
+          from Special Database 14
+fv2.cls - Class file for fv2.oas
+fv2.oas - Ridge flow (oas) features for files f0002701.wsq-f0005400.wsq
+          from Special Database 14
+fv3.cls - Class file for fv3.oas
+fv3.oas - Ridge flow (oas) features for files f0005401.wsq-f0008100.wsq
+          from Special Database 14
+fv4.cls - Class file for fv4.oas
+fv4.oas - Ridge flow (oas) features for files f0002701.wsq-f0010800.wsq
+          from Special Database 14
+fv5.cls - Class file for fv5.oas
+fv5.oas - Ridge flow (oas) features for files f0010801.wsq-f0013500.wsq
+          from Special Database 14
+fv6.cls - Class file for fv6.oas
+fv6.oas - Ridge flow (oas) features for files f0013501.wsq-f0016200.wsq
+          from Special Database 14
+fv7.cls - Class file for fv7.oas
+fv7.oas - Ridge flow (oas) features for files f0016201.wsq-f0018900.wsq
+          from Special Database 14
+fv8.cls - Class file for fv8.oas
+fv8.oas - Ridge flow (oas) features for files f0018901.wsq-f0021600.wsq
+          from Special Database 14
+fv9.cls - Class file for fv9.oas
+fv9.oas - Ridge flow (oas) features for files f0021601.wsq-f0024300.wsq
+          from Special Database 14
+sv10.cls - Class file for sv10.oas (The fingerprint test set)

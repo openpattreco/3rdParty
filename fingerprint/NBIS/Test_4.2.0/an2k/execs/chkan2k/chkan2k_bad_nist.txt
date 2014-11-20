@@ -1,0 +1,266 @@
+/c/srcp4/projects/NBIS/Test/an2k/execs/chkan2k
+----------------------------------------
+----------------------------------------
+This checks one extra byte appended to the end of the file
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-extra-byte.an2
+ERROR : read_ANSI_NIST_file : extra data starting at ../../data/bad/a001-extra-byte.an2:676043
+----------------------------------------
+----------------------------------------
+This checks contents field contains one extra record, which does not exist.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-extra-cnt.an2
+ERROR : read_ANSI_NIST_field_ID : fgetc record_type digit: premature EOF, at 676751
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 record missing from beginning of file.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-headless.an2
+ERROR : read_Type1_record : first record type 14, must be 1
+----------------------------------------
+----------------------------------------
+This checks type-1 TOT field is 8 bytes, required size is 3 or 4 bytes.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-item-too-big.an2
+ERROR CHECK: ../../data/bad/a001-item-too-big.an2: [1.4.1.1] [Type-1.004] TOT item size 8 bytes, not 3 to 4 as required: 'MDNISTIG<GS>'
+----------------------------------------
+----------------------------------------
+This checks type-1 TOT field is 2 bytes, required size is 3 or 4 bytes.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/bad/a001-item-too-small.an2
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [1.4.1.1] [Type-1.004] TOT item size 2 bytes, not 3 to 8 as required: 'NI<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [2.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [2.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [3.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [3.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [4.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [4.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [5.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [5.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [6.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [6.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [7.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [7.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [8.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [8.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [9.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [9.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [10.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [10.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [11.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [11.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [12.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [12.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [13.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [13.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [14.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [14.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [15.4.1.1] [Type-14.004] SRC item size 10 bytes, not 8 to 9 as required: 'GBMDNISTIG<GS>'
+ERROR CHECK: ../../data/bad/a001-item-too-small.an2: [15.4.1.1] [Type-14.004] SRC unexpected item value: GBMDNISTIG.
+----------------------------------------
+----------------------------------------
+This checks contents field list missing one entry, but the record exists.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/bad/a001-missing-cnt.an2
+ERROR : read_ANSI_NIST_file : extra data starting at ../../data/bad/a001-missing-cnt.an2:564001
+WARNING CHECK: ../../data/bad/a001-missing-cnt.an2: image-count tenprint: 1 missing impressions.
+----------------------------------------
+----------------------------------------
+This checks record missing one required field.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k -c nist-samples.conf ../../data/bad/a001-missing-field.an2
+ERROR CHECK: ../../data/bad/a001-missing-field.an2: [1] [Type-1.011] NSR required field missing
+----------------------------------------
+----------------------------------------
+This checks field missing one required item.
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-missing-item.an2
+ERROR : read_ANSI_NIST_remaining_records : Type-1 CNT Field (1.003) Subfield 13 bad format: number of items 1, not 2 as required
+----------------------------------------
+----------------------------------------
+This checks one finger mis-numbered
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-one-dup.an2
+WARNING CHECK: ../../data/bad/a001-one-dup.an2: image-count tenprint: 1 missing impressions.
+WARNING CHECK: ../../data/bad/a001-one-dup.an2: image-count tenprint: 1 extraneous impressions.
+----------------------------------------
+----------------------------------------
+This checks one finger missing
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-one-missing.an2
+WARNING CHECK: ../../data/bad/a001-one-missing.an2: image-count tenprint: 1 missing impressions.
+----------------------------------------
+----------------------------------------
+This checks segment field missing an item
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-seg-missing-item.an2
+ERROR CHECK: ../../data/bad/a001-seg-missing-item.an2: [5.14.1] [Type-14.021] SEG number of items 4 is not 5 as required
+----------------------------------------
+----------------------------------------
+This checks file truncated at 999 bytes, in type-14 image data
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-data-trunc-999.an2
+ERROR : read_ANSI_NIST_image_field : fread image_item->value: only 574 bytes read of 42297, in Type-14 record: premature EOF, at 999
+----------------------------------------
+----------------------------------------
+This checks type-14 record length specified one to small
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-1.an2
+ERROR : read_ANSI_NIST_image_field : image record terminated with 0xa1 not FS_CHAR (0x1c), in Type-14 record, at 42722
+----------------------------------------
+----------------------------------------
+This checks type-14 record length specified one to large
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len+1.an2
+ERROR : read_ANSI_NIST_image_field : image record terminated with 0x31 not FS_CHAR (0x1c), in Type-14 record, at 42724
+----------------------------------------
+----------------------------------------
+This checks type-14 record type in LEN field id, first char NULL, at byte 224
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-fid-null-224.an2
+ERROR : read_ANSI_NIST_field_ID : record_type character ' ' (0x00) not numeric, at 224
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-14 record type in LEN field id, second char NULL, at byte 225
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-fid-null-225.an2
+ERROR : read_ANSI_NIST_field_ID : record_type character ' ' (0x00) not numeric, at 225
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-14 record type in LEN field id truncated at 1st char, byte 224
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-fid-trunc-224.an2
+ERROR : read_ANSI_NIST_field_ID : fgetc record_type digit: premature EOF, at 223
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks value of type-14 LEN field NULL at first char, byte 231
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-val-null-231.an2
+ERROR : read_ANSI_NIST_field : too few bytes -13 remaining in record, at 236
+----------------------------------------
+----------------------------------------
+This checks value of type-14 LEN field NULL at second char, byte 232
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-val-null-232.an2
+ERROR : read_ANSI_NIST_field : too few bytes -9 remaining in record, at 236
+----------------------------------------
+----------------------------------------
+This checks value of type-14 LEN field NULL at third char, byte 233
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-len-val-null-233.an2
+ERROR : read_ANSI_NIST_field : too few bytes -6 remaining in record, at 271
+----------------------------------------
+----------------------------------------
+This checks type-14 record terminator missing, at byte 42723
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-term-del-42723.an2
+ERROR : read_ANSI_NIST_image_field : image record terminated with 0x31 not FS_CHAR (0x1c), in Type-14 record, at 42723
+----------------------------------------
+----------------------------------------
+This checks type-14 record terminator NULL at byte 42723
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-term-null-42723.an2
+ERROR : read_ANSI_NIST_image_field : image record terminated with 0x00 not FS_CHAR (0x1c), in Type-14 record, at 42723
+----------------------------------------
+----------------------------------------
+This checks file truncated before type-14 record terminator at byte 42722
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t14-term-trunc-42722.an2
+ERROR : read_ANSI_NIST_image_field : fgetc delimiter: in Type-14 record: premature EOF, at 42722
+----------------------------------------
+----------------------------------------
+This checks type-1 record length field value one short
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-len-1.an2
+ERROR : read_Type1_record : read 223 bytes of a 222 byte record, at 223
+----------------------------------------
+----------------------------------------
+This checks type-1 record length field value one long
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-len+1.an2
+ERROR : read_Type1_record : read 223 bytes of a 224 byte record, at 223
+----------------------------------------
+----------------------------------------
+This checks type-1 record length field id, first char NULL
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-len-fid-null-0.an2
+ERROR : read_ANSI_NIST_field_ID : record_type character ' ' (0x00) not numeric, at 1
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 record length field id, second char NULL
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-len-fid-null-1.an2
+ERROR : read_ANSI_NIST_field_ID : record_type character ' ' (0x00) not numeric, at 2
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 record length field id, third char NULL
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-len-fid-null-2.an2
+ERROR : read_ANSI_NIST_field_ID : field_int character ' ' (0x00) not numeric, at 3
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 record terminator missing, at byte 223
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-term-del-223.an2
+ERROR : read_ANSI_NIST_field : too few bytes -12 remaining in record, at 235
+----------------------------------------
+----------------------------------------
+This checks type-1 record terminator null, at byte 223
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-term-null-223.an2
+ERROR : read_ANSI_NIST_field : too few bytes -13 remaining in record, at 236
+----------------------------------------
+----------------------------------------
+This checks file truncated before type-1 record terminator, at byte 222
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-t1-term-trunc-222.an2
+ERROR : read_ANSI_NIST_item : fgetc item: premature EOF, at 222
+----------------------------------------
+----------------------------------------
+This checks type-1 record contains two TOT fields, should have one and only one
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/a001-too-many-items.an2
+ERROR CHECK: ../../data/bad/a001-too-many-items.an2: [1.4.1] [Type-1.004] TOT number of items 2 is not 1 as required
+----------------------------------------
+----------------------------------------
+This checks the file exists but its size is zero
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/empty.an2
+ERROR : read_ANSI_NIST_field_ID : fgetc record_type digit: premature EOF, at 0
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks JP2 face image, invalid field 1.016 has value 'taboo'
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/face-forbidden-field.an2
+ERROR CHECK: ../../data/bad/face-forbidden-field.an2: [1.11] [Type-1.016] unknown field: 'taboo<GS>'
+WARNING : decode_tagged_field_image : unsupported compression algorithm JP2 in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/bad/face-forbidden-field.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks JP2 face with incorrect height in type-10 record
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/face-jp2-image-height.an2
+WARNING : decode_tagged_field_image : unsupported compression algorithm JP2 in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/bad/face-jp2-image-height.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks JP2 face with incorrect width in type-10 record
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/face-jp2-image-width.an2
+WARNING : decode_tagged_field_image : unsupported compression algorithm JP2 in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/bad/face-jp2-image-width.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks JP2 face with user defined field
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/face-udf.an2
+WARNING CHECK: ../../data/bad/face-udf.an2: [2.15] [Type-10.216] User-defined field (UDF): 'user defined<GS>'
+WARNING : decode_tagged_field_image : unsupported compression algorithm JP2 in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/bad/face-udf.an2: [2.16] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks PNG face with invalid IMT value 'AFACE'
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/face-wrong-string.an2
+ERROR CHECK: ../../data/bad/face-wrong-string.an2: [2.3.1.1] [Type-10.003] IMT unexpected item value: AFACE.
+WARNING : decode_tagged_field_image : unsupported compression algorithm PNG in image record index [2] [Type-10].
+Image record ignored.
+ERROR CHECK: ../../data/bad/face-wrong-string.an2: [2.15] [Type-10.999] DATA cannot decode image, error code 0
+----------------------------------------
+----------------------------------------
+This checks type-1 length field id number too large
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/vxt1-len-id-too-big.an2
+ERROR : read_ANSI_NIST_field_ID : field integer not found in field ID, at 12
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 length field type id truncated
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/vxt1-len-type-eof.an2
+ERROR : read_ANSI_NIST_field_ID : fgetc record_type digit: premature EOF, at 1
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 length field type id too large
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/vxt1-len-type-too-big.an2
+ERROR : read_ANSI_NIST_field_ID : record integer not found in field ID, at 10
+ERROR : read_ANSI_NIST_record_length : record length not parsed
+----------------------------------------
+----------------------------------------
+This checks type-1 length value too large
+/c/srcp4/projects/NBIS/Main/bin/chkan2k ../../data/bad/vxt1-len-val-too-big.an2
+ERROR : read_ANSI_NIST_item : fgetc item: premature EOF, at 40
+ERROR : read_ANSI_NIST_record_length : record length not parsed

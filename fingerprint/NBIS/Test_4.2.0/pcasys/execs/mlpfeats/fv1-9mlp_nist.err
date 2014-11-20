@@ -1,0 +1,5 @@
+npats = 24300
+nfeats = 128
+nouts = 6
+ncls = 24300
+A L R S T W 

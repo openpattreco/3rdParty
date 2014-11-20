@@ -1,0 +1,72 @@
+jp2codec -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossy.jp2 --fing-1000-lossy
+Processing fingerprint, 1000ppi, LOSSY compression...
+Output formatting options:
+rates=14,23,32,53,80,133,200,320,533
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+mode=real
+jp2codec -f ../../data/finger/gray/pnm/003_R02_nist.pnm -F ../../data/finger/gray/jp2/003_R02_fing-1000-lossless.jp2 --fing-1000-lossless
+Processing fingerprint, 1000ppi, LOSSLESS compression...
+Output formatting options:
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+mode=int
+jp2codec -f ../../data/finger/gray/pnm/003_R02_nist.pnm -t pnm -F ../../data/finger/gray/jp2/003_R02_custom_lossy.jp2 -T jp2 -O mode=real -O numdecomlvls=6 -O prg=rpcl -O hrcn=39370 -O vrcn=39370 -O rates=14,23,32,53,80,133,200,320,533
+Output formatting options:
+mode=real
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+rates=14,23,32,53,80,133,200,320,533
+jp2codec -f ../../data/finger/gray/pnm/003_R02_nist.pnm -t pnm -F ../../data/finger/gray/jp2/003_R02_custom_lossless.jp2 -T jp2 -O mode=int -O numdecomlvls=6 -O prg=rpcl -O hrcn=39370 -O vrcn=39370
+Output formatting options:
+mode=int
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+jp2codec -f ../../data/finger/gray/jp2/003_R02_fing-1000-lossy.jp2 -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossy.pnm
+Software Info: "EncID:1 NIST01"
+jp2codec -f ../../data/finger/gray/jp2/003_R02_fing-1000-lossless.jp2 -F ../../data/finger/gray/pnm/003_R02_decoded_fing-1000-lossless.pnm
+Software Info: "EncID:1 NIST01"
+jp2codec -f ../../data/finger/gray/pnm/007_R02_nist.pnm -F ../../data/finger/gray/jp2/007_R02_fing-1000-lossy.jp2 --fing-1000-lossy
+Processing fingerprint, 1000ppi, LOSSY compression...
+Output formatting options:
+rates=14,23,32,53,80,133,200,320,533
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+mode=real
+jp2codec -f ../../data/finger/gray/pnm/007_R02_nist.pnm -F ../../data/finger/gray/jp2/007_R02_fing-1000-lossless.jp2 --fing-1000-lossless
+Processing fingerprint, 1000ppi, LOSSLESS compression...
+Output formatting options:
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+mode=int
+jp2codec -f ../../data/finger/gray/pnm/007_R02_nist.pnm -t pnm -F ../../data/finger/gray/jp2/007_R02_custom_lossy.jp2 -T jp2 -O mode=real -O numdecomlvls=6 -O prg=rpcl -O hrcn=39370 -O vrcn=39370 -O rates=14,23,32,53,80,133,200,320,533
+Output formatting options:
+mode=real
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+rates=14,23,32,53,80,133,200,320,533
+jp2codec -f ../../data/finger/gray/pnm/007_R02_nist.pnm -t pnm -F ../../data/finger/gray/jp2/007_R02_custom_lossless.jp2 -T jp2 -O mode=int -O numdecomlvls=6 -O prg=rpcl -O hrcn=39370 -O vrcn=39370
+Output formatting options:
+mode=int
+numdecomlvls=6
+prg=rpcl
+hrcn=39370
+vrcn=39370
+jp2codec -f ../../data/finger/gray/jp2/007_R02_fing-1000-lossy.jp2 -F ../../data/finger/gray/pnm/007_R02_decoded_fing-1000-lossy.pnm
+Software Info: "EncID:1 NIST01"
+jp2codec -f ../../data/finger/gray/jp2/007_R02_fing-1000-lossless.jp2 -F ../../data/finger/gray/pnm/007_R02_decoded_fing-1000-lossless.pnm
+Software Info: "EncID:1 NIST01"
